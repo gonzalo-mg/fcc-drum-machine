@@ -1,24 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
+import { DrumPad } from './components/DrumPad';
+// import and name audio tracks here
+import doh from "./audios/doh1.mp3"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <article id='drum-machine'>
+      <DrumPad assignedKey="Q" audioTitle="Doh" audioFile={doh}></DrumPad>
+    </article>
   );
 }
 
