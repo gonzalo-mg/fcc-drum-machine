@@ -6,10 +6,13 @@
     font-size: larger;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
     background-color: bisque;
+    transition: background-color 1s ease-in-out;
+
     color: green;
 
     border: 2px solid orange;
@@ -17,6 +20,15 @@
     cursor: pointer;
 }
 
-.isPlaying{
-    background-color: brown;
+.keyLabel {}
+
+.titleLabel{
+    font-size: 0.75rem;
+    text-align: center;
 }
+
+.isPlaying {
+    background-color: orangered;
+    transition: background-color 1s ease-in-out;
+  }
+  

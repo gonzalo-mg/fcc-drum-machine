@@ -1,9 +1,10 @@
 /* 
 button to play sound
 */
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./index.css";
 import PropTypes from "prop-types";
+import { getAudioDurationInSeconds } from "@remotion/media-utils";
 
 export const DrumPad = ({
   assignedKey,
@@ -15,38 +16,40 @@ export const DrumPad = ({
   const clip = new Audio(audioFile);
   // states to activate and modify css when playing
   const [playing, setPlaying] = useState("notPlaying");
+  const [clipDuration, setClipDuration] = useState("1000");
+
+  //f
+  const getClipDuration = async () => {
+    const duration = (await getAudioDurationInSeconds(audioFile)) * 1000;
+    setClipDuration(duration);
+  };
+  // to get in time
+  useEffect(() => {
+    getClipDuration();
+  }, []);
 
   // f to play audio
   const play = (event) => {
-    console.log("play called");
     // stop event to prevent play() from being called multiple times per keypress; onClick does not have .stopImmediatePropagation() as function
     if (event.type === "keydown") {
       event.stopImmediatePropagation();
     }
     clip.play();
-    playCSS();
-  };
-
-  // f to modify css on play
-  const playCSS = () => {
     // send text to display
     recoverDisplayText(audioTitle);
     // modify css
     setPlaying("isPlaying");
     setTimeout(() => {
       setPlaying("notPlaying");
-    }, 1000);
+    }, clipDuration);
   };
 
   // f to handle keypress by user: play audio if pressed key corresponds to assigned key
   const handleKeyPress = (event) => {
-    setPlaying("isPlaying"); // set state to true
-    console.log("handleKeyPress - called");
     if (
       event.key === assignedKey.toLowerCase() ||
       event.key === assignedKey.toUpperCase()
     ) {
-      playCSS();
       play(event);
     }
   };
@@ -55,8 +58,9 @@ export const DrumPad = ({
   document.addEventListener("keydown", handleKeyPress);
 
   return (
-    <p id={audioTitle} className={`drum-pad ${playing}`} onClick={play}>
-      {playing}
+    <p className={`drum-pad ${playing}`} onClick={play}>
+      <p className="keyLabel">{assignedKey}</p>
+      <p className="titleLabel">{audioTitle}</p>
     </p>
   );
 };
