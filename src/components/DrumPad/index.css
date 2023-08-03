@@ -1,0 +1,22 @@
+.drum-pad{
+    width: 5rem;
+    height: 5rem;
+
+    font-weight: bold;
+    font-size: larger;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: bisque;
+    color: green;
+
+    border: 2px solid orange;
+
+    cursor: pointer;
+}
+
+.isPlaying{
+    background-color: brown;
+}
