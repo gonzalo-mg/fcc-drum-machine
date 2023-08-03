@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/fcc-drum-machine/static/css/main.1c3ee15c.css",
+    "main.js": "/fcc-drum-machine/static/js/main.1c400e8e.js",
+    "static/js/787.f7ddfc4a.chunk.js": "/fcc-drum-machine/static/js/787.f7ddfc4a.chunk.js",
+    "static/media/champion.mp3": "/fcc-drum-machine/static/media/champion.02d6e3c7763c1b829ffd.mp3",
+    "static/media/dancewgay.mp3": "/fcc-drum-machine/static/media/dancewgay.b9baf3e2892871e8ac75.mp3",
+    "static/media/background.jpg": "/fcc-drum-machine/static/media/background.f8ddeff196bb32197fc2.jpg",
+    "static/media/thksnthn.mp3": "/fcc-drum-machine/static/media/thksnthn.4ea49a064d7cc27e7984.mp3",
+    "static/media/crap.mp3": "/fcc-drum-machine/static/media/crap.b6d5e0993248114a3ca2.mp3",
+    "static/media/mchocola.mp3": "/fcc-drum-machine/static/media/mchocola.243ecf4915dcd3b17b25.mp3",
+    "static/media/boring.mp3": "/fcc-drum-machine/static/media/boring.ba47f4f4ce78039b9151.mp3",
+    "static/media/belching.mp3": "/fcc-drum-machine/static/media/belching.db926209531240e9b065.mp3",
+    "static/media/haha.mp3": "/fcc-drum-machine/static/media/haha.23bb84c02d4936957618.mp3",
+    "static/media/doh1.mp3": "/fcc-drum-machine/static/media/doh1.948dc56798db07d9888e.mp3",
+    "index.html": "/fcc-drum-machine/index.html",
+    "main.1c3ee15c.css.map": "/fcc-drum-machine/static/css/main.1c3ee15c.css.map",
+    "main.1c400e8e.js.map": "/fcc-drum-machine/static/js/main.1c400e8e.js.map",
+    "787.f7ddfc4a.chunk.js.map": "/fcc-drum-machine/static/js/787.f7ddfc4a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1c3ee15c.css",
+    "static/js/main.1c400e8e.js"
+  ]
+}
