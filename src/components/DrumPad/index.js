@@ -36,7 +36,7 @@ export const DrumPad = ({
     }
     clip.play();
     // send text to display
-    recoverDisplayText(audioTitle);
+    recoverDisplayText(audioTitle, clipDuration);
     // modify css
     setPlaying("isPlaying");
     setTimeout(() => {

@@ -9,7 +9,9 @@
     height: 100vh;
     width: 100vw;
   
+    background-image: url(/public/background.jpg);
     background-color: darkgoldenrod;
+
     color: black;
   }
   
@@ -43,8 +45,8 @@
   }
 
   main{
-    background-image: url(/public/background.jpg);
-    background-color: bisque; /* Used if the image is unavailable */
+    
+    
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

@@ -14,11 +14,14 @@ import thksnthn from "./audios/thksnthn.mp3";
 import { useState } from "react";
 
 function App() {
-  const [displayText, setDisplayText] = useState("");
+  const [displayText, setDisplayText] = useState("Ready to play...");
 
   // f to recover text from child component DrumPad to display audio title on display
-  const recoverDisplayText = (text) => {
+  const recoverDisplayText = (text, duration) => {
     setDisplayText(text);
+    setTimeout(()=>{
+      setDisplayText(`Last played: ${text}`)
+    }, duration)
   };
 
   return (
