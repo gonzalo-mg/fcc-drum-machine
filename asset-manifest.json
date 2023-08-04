@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/fcc-drum-machine/static/css/main.23c5d798.css",
-    "main.js": "/fcc-drum-machine/static/js/main.d16cc37b.js",
+    "main.css": "/fcc-drum-machine/static/css/main.74af6335.css",
+    "main.js": "/fcc-drum-machine/static/js/main.cb0e9afe.js",
     "static/js/787.f7ddfc4a.chunk.js": "/fcc-drum-machine/static/js/787.f7ddfc4a.chunk.js",
     "static/media/champion.mp3": "/fcc-drum-machine/static/media/champion.02d6e3c7763c1b829ffd.mp3",
     "static/media/dancewgay.mp3": "/fcc-drum-machine/static/media/dancewgay.b9baf3e2892871e8ac75.mp3",
@@ -14,12 +14,12 @@
     "static/media/haha.mp3": "/fcc-drum-machine/static/media/haha.23bb84c02d4936957618.mp3",
     "static/media/doh1.mp3": "/fcc-drum-machine/static/media/doh1.948dc56798db07d9888e.mp3",
     "index.html": "/fcc-drum-machine/index.html",
-    "main.23c5d798.css.map": "/fcc-drum-machine/static/css/main.23c5d798.css.map",
-    "main.d16cc37b.js.map": "/fcc-drum-machine/static/js/main.d16cc37b.js.map",
+    "main.74af6335.css.map": "/fcc-drum-machine/static/css/main.74af6335.css.map",
+    "main.cb0e9afe.js.map": "/fcc-drum-machine/static/js/main.cb0e9afe.js.map",
     "787.f7ddfc4a.chunk.js.map": "/fcc-drum-machine/static/js/787.f7ddfc4a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.23c5d798.css",
-    "static/js/main.d16cc37b.js"
+    "static/css/main.74af6335.css",
+    "static/js/main.cb0e9afe.js"
   ]
 }
